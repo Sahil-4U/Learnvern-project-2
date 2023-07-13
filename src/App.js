@@ -1,12 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
 import AddSubscriber from './components/subscribers/AddSubscriber';
+import Container from './components/templates/Container';
 
 function App() {
   return (
-    <div className="App">
+    <Container>
       <AddSubscriber />
-    </div>
+    </Container>
   );
 }
 
