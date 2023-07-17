@@ -3,6 +3,7 @@ import './AddSubscriber.css';
 import Container from '../templates/Container';
 import Button from '../templates/Button';
 import ErrorModals from '../templates/ErrorModals';
+import Input from '../templates/Input';
 
 function AddSubscriber(props) {
     // I have implementing useRef() instead of useState() that why i comment useState() element and update function:-->
@@ -42,6 +43,7 @@ function AddSubscriber(props) {
                 <Container className='input'>
                     <label htmlFor='name'>Name</label>
                     <input ref={nameInputRef} type='text' id='name' placeholder='name' required />
+                    {/* <Input ref={nameInputRef} type='text' id='name' label='Name' /> */}
                     <label htmlFor='pincode'>Pincode</label>
                     <input type='number' id='pincode' placeholder='pincode' onChange={pincodeHandler} value={pin} required />
                     <Button type="submit" >Save</Button>
